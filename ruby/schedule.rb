@@ -2,18 +2,13 @@ require "./timeslot.rb"
 
 class Schedule
 
+  attr_reader :x_max
+  attr_reader :y_max
+
   def initialize(x_max, y_max)
     @layout = []
     @x_max = x_max
     @y_max = y_max
-  end
-
-  def x_max
-    @x_max
-  end
-
-  def y_max
-    @y_max
   end
 
   def timeslot(x=0,y=0)
